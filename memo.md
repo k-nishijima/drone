@@ -8,8 +8,8 @@
 ## ラズパイ側の無線のIPアドレスを取得する方法
 
 * http://openrtm.org/openrtm/ja/node/266 の「ホスト名でリモート接続する」というところを見て設定
-* これで上手く行かなければこっち http://www.raspberrypi.org/forums/viewtopic.php?f=82&t=26462
-
+* これで上手く行かなければこっち http://catmoney.hatenablog.com/entry/20140201
+* 最悪これでも http://www.raspberrypi.org/forums/viewtopic.php?f=82&t=26462
 
 ## mbed側
 

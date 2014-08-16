@@ -29,7 +29,7 @@ void setup() {
 
   // raspi serial
   Serial.begin(9600);
-  Serial.println("Started");
+//  Serial.println("Started");
 
   // GPS Setup
   serialGPS.begin(4800);
@@ -119,7 +119,7 @@ String checkGPS()
       }
     }
   } else {
-      Serial.println("GPS not available...");
+//      Serial.println("GPS not available...");
   }
   return false;
 }
@@ -156,8 +156,8 @@ void loop(){
          inString = String(inString + c);
          
        } else {
-         Serial.println(""); //for debug
-         Serial.println("accepted:"+ inString); //for debug
+//         Serial.println(""); //for debug
+//         Serial.println("accepted:"+ inString); //for debug
 
           if(inString.startsWith("front:")){
               move_front(parseTime(inString));
@@ -175,6 +175,7 @@ void loop(){
               String s = checkGPS();
               if(s && s.substring(0, 6) == "$GPGGA")
               {
+//                int n = Serial.write(s);
                 Serial.println(s);
                 gpsloop = 0;
               }
@@ -184,6 +185,7 @@ void loop(){
 
 
           inString = "";
+          Serial.flush();
        }
        
     }

@@ -11,12 +11,19 @@
 * これで上手く行かなければこっち http://catmoney.hatenablog.com/entry/20140201
 * 最悪これでも http://www.raspberrypi.org/forums/viewtopic.php?f=82&t=26462
 
+西島のラズパイ
+
 wlan0     Link encap:イーサネット  ハードウェアアドレス b0:c7:45:ed:05:b4 
           inetアドレス:192.168.55.37 ブロードキャスト:192.168.63.255  マスク:255.255.240.0
 
 ## mbed側
 
-* mbed RPC Over Serialを入れる https://mbed.org/cookbook/Interfacing-with-Python
+* mbed RPC Over Serialを入れる
+* http://mbed.org/users/okini3939/notebook/RPC_jp/
+* →とその前に、mbed-rpcライブラリをインポートしないと行けないとのこと。。
+* https://mbed.org/teams/mbed-official/code/mbed-rpc/
+
+* https://mbed.org/cookbook/Interfacing-with-Python
 
 * GPSデータを読み込むコマンドを、RPCに対応させる
 * http://mbed.org/users/okini3939/notebook/RPC_jp/

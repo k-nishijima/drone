@@ -11,6 +11,9 @@
 * これで上手く行かなければこっち http://catmoney.hatenablog.com/entry/20140201
 * 最悪これでも http://www.raspberrypi.org/forums/viewtopic.php?f=82&t=26462
 
+wlan0     Link encap:イーサネット  ハードウェアアドレス b0:c7:45:ed:05:b4 
+          inetアドレス:192.168.55.37 ブロードキャスト:192.168.63.255  マスク:255.255.240.0
+
 ## mbed側
 
 * mbed RPC Over Serialを入れる https://mbed.org/cookbook/Interfacing-with-Python

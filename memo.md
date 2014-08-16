@@ -27,3 +27,7 @@ wlan0     Link encap:イーサネット  ハードウェアアドレス b0:c7:45
 
 * GPSデータを読み込むコマンドを、RPCに対応させる
 * http://mbed.org/users/okini3939/notebook/RPC_jp/
+
+## Windowsでシリアル通信
+
+* http://mbed.org/users/weed/notebook/how_to_communicate_by_serial_port_on_windows7/

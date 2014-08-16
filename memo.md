@@ -4,6 +4,7 @@
 
 * 1箇所修正（どこ？？） http://blog.goo.ne.jp/roboz80/e/5dc5a26535b2dd42b7820ec993c284d1
 
+* こんな感じでシリアルプログラミングしましょう http://nwpct1.hatenablog.com/entry/2013/10/18/124844
 
 ## ラズパイ側の無線のIPアドレスを取得する方法
 

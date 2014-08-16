@@ -9,8 +9,8 @@ String inString = String(maxLength);
 byte val=0;
 
 // GPS Setup
-#define rxGPS 3
-#define txGPS 5
+#define rxGPS 13
+#define txGPS 11
 SoftwareSerial serialGPS = SoftwareSerial(rxGPS, txGPS);
 String stringGPS = "";
 
@@ -119,7 +119,7 @@ String checkGPS()
       }
     }
   } else {
-//      Serial.println("GPS not available...");
+      Serial.println("GPS not available...");
   }
   return false;
 }
@@ -163,16 +163,27 @@ void loop(){
               move_front(parseTime(inString));
           } else if(inString.startsWith("back:")){
               move_back(parseTime(inString));
-          } else if(inString.startsWith("stop|")){
+          } else if(inString.startsWith("stop")){
               move_stop();
           } else if(inString.startsWith("left:")){
               rotate_left(parseTime(inString));
           } else if(inString.startsWith("right:")){
               rotate_right(parseTime(inString));
+          } else if(inString.startsWith("gps")){
+            int gpsloop = 1;
+            while(gpsloop == 1) {
+              String s = checkGPS();
+              if(s && s.substring(0, 6) == "$GPGGA")
+              {
+                Serial.println(s);
+                gpsloop = 0;
+              }
+            }
+              
           }
 
 
-            inString = "";
+          inString = "";
        }
        
     }

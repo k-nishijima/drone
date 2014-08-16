@@ -79,3 +79,11 @@ wlan0     Link encap:イーサネット  ハードウェアアドレス b0:c7:45
 
 * http://arms22.blog91.fc2.com/blog-entry-299.html
 * http://www.gonmad.co.uk/nmea.php
+
+サンプルデータ：
+
+$GPGGA,085420.000,2628.5327,N,12750.0444,E,1,03,4.6,38.9,M,29.3,M,,0000*64
+
+## これをGoogle Map(10進数)に変換する
+
+* http://yu-write.blogspot.jp/2013/11/gps-gps10.html

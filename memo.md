@@ -24,21 +24,21 @@ Then to load mosquitto now:
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mosquitto.plist
 Or, if you don't want/need launchctl, you can just run:
     mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
-==> Summary
 🍺  /usr/local/Cellar/mosquitto/1.3.4: 26 files, 632K
 
 
 ## pip install paho-mqtt
 
-。。。と思ったが、mqttのライブラリがうまく動かない。。。
+。。。と思ったが、mqttのライブラリがうまく動かないので諦めるか。。
 
 
-## 普通のHTTPのライブラリ
+## 因みに普通のHTTPのライブラリ
 
  $ pip install httplib2
 
 
 
+* こんな感じでシリアルプログラミングしましょう http://nwpct1.hatenablog.com/entry/2013/10/18/124844
 
 ## ラズパイ側の無線のIPアドレスを取得する方法
 
@@ -73,3 +73,9 @@ wlan0     Link encap:イーサネット  ハードウェアアドレス b0:c7:45
 * EM-406Aというモジュールなのかな？
 * http://tokyo2show.co.jp/news/?p=25
 * 配線 http://www.instructables.com/id/Connecting-GPS-module-to-Arduino/?lang=ja
+
+
+## GPSモジュールから上がってくるデータの仕様
+
+* http://arms22.blog91.fc2.com/blog-entry-299.html
+* http://www.gonmad.co.uk/nmea.php

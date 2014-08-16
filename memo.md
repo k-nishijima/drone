@@ -37,3 +37,4 @@ wlan0     Link encap:イーサネット  ハードウェアアドレス b0:c7:45
 
 * EM-406Aというモジュールなのかな？
 * http://tokyo2show.co.jp/news/?p=25
+* 配線 http://www.instructables.com/id/Connecting-GPS-module-to-Arduino/?lang=ja

@@ -4,6 +4,41 @@
 
 * 1箇所修正（どこ？？） http://blog.goo.ne.jp/roboz80/e/5dc5a26535b2dd42b7820ec993c284d1
 
+* MQTT http://www.basuke.com/2013/05/07/gas-range-watcher-4/
+* (Macなど)サーバ側の設定 http://tomowatanabe.hatenablog.com/entry/2014/04/21/095650
+
+Macへのインストールメモ
+
+mosquitto has been installed with a default configuration file.
+You can make changes to the configuration by editing:
+    /usr/local/etc/mosquitto/mosquitto.conf
+
+Python client bindings can be installed from the Python Package Index:
+    pip install mosquitto
+
+Javascript client has been removed, see Eclipse Paho for an alternative.
+
+To have launchd start mosquitto at login:
+    ln -sfv /usr/local/opt/mosquitto/*.plist ~/Library/LaunchAgents
+Then to load mosquitto now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mosquitto.plist
+Or, if you don't want/need launchctl, you can just run:
+    mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
+==> Summary
+🍺  /usr/local/Cellar/mosquitto/1.3.4: 26 files, 632K
+
+
+## pip install paho-mqtt
+
+。。。と思ったが、mqttのライブラリがうまく動かない。。。
+
+
+## 普通のHTTPのライブラリ
+
+ $ pip install httplib2
+
+
+
 
 ## ラズパイ側の無線のIPアドレスを取得する方法
 

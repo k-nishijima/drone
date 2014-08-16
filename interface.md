@@ -2,11 +2,13 @@
 
 ### ラズパイを親、Arduinoを子とする。
 
+### コマンドの末尾は「|」とする。
+
 ## 移動に関する仕様
 
 親→子へのリクエスト：
 
-* forward:nnnn
+* front:nnnn
 * back:nnnn
 * stop
 * left:nnnn
